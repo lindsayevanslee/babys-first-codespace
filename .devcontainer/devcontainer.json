@@ -55,7 +55,8 @@
 				"ms-python.python",
 				"reditorsupport.r",
 				"GitHub.copilot",
-				"GitHub.copilot-chat"
+				"GitHub.copilot-chat",
+				"RDebugger.r-debugger"
 			]
 		}
 	},

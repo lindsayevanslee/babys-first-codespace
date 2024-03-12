@@ -53,7 +53,9 @@
 			"extensions": [
 				"ms-toolsai.jupyter",
 				"ms-python.python",
-				"reditorsupport.r"
+				"reditorsupport.r",
+				"GitHub.copilot",
+				"GitHub.copilot-chat"
 			]
 		}
 	},

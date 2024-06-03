@@ -14,7 +14,7 @@
 			"installVscDebugger": true
 		},
 		"ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
-			"packages": "r-cran-data.table,r-cran-tidyverse",
+			"packages": "r-cran-data.table,r-cran-tidyverse,r-cran-gganimate",
 			"upgradePackages": true
 		}
 	},

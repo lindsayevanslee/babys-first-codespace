@@ -45,7 +45,7 @@
 					]
 				},
 				"[r]": {
-					"rterm.linux": "/usr/local/bin/radian",
+					"rterm.linux": "/usr/bin/R",
 					"r.bracketedPaste": true
 				}
 			},

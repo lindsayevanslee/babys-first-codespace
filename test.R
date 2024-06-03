@@ -1,0 +1,1 @@
+sort(dimnames(installed.packages())[[1]])

@@ -1,29 +1,12 @@
 {
 	"name": "Data Science (Python and R)",
-	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+	"image": "ghcr.io/rocker-org/devcontainer/tidyverse:4.3",
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
 		"ghcr.io/devcontainers/features/python:1": {
 			"version": "latest"
-		},
-		"ghcr.io/rocker-org/devcontainer-features/r-apt:latest": {
-			"vscodeRSupport": "full",
-			"installDevTools": true,
-			"installRadian": true,
-			"installRMarkdown": true,
-			"installVscDebugger": true
-		},
-		"ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
-			"packages": "make,gcc,g++,r-cran-data.table,r-cran-tidyverse,r-cran-gganimate",
-			"upgradePackages": true
-		},
-		"ghcr.io/rocker-org/devcontainer-features/r-packages:1": {
-			"packages": "ggmap,ggExtra"
 		}
 	},
-	"overrideFeatureInstallOrder": [
-		"ghcr.io/rocker-org/devcontainer-features/r-apt"
-	],
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "pip install ipykernel ipywidgets && if [ -f requirements.txt* ]; then pip install -r requirements.txt; else pip install pandas numpy matplotlib seaborn scikit-learn; fi",
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
